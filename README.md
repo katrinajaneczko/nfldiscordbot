@@ -19,5 +19,14 @@ These instructions are for Discord admin users.
 6. The bot should respond with a message, indicating that it's working correctly.
 7. Additional instructions will be provided as the project progresses.
 
+## How to Deploy
+1. Sync the fork with the original repository to retrieve new code changes. 
+2. Click [here](https://discord.com/api/oauth2/authorize?client_id=1172214896553898074&permissions=68608&scope=bot) to access the production bot's invite link.
+   * A separate bot and bot token is used for deployments (as opposed to local development).  
+3. The code is deployed using a GitHub Action workflow which creates a JAR file, containerizes it using Docker, pushes the image to an Amazon ECR registry, and pulls the image to deploy an Amazon ECS service.
+   * The workflow runs each time there is a push to the `main` branch.
+   * If there is a green icon as opposed to red, then it's deploying correctly.
+4. See the Wiki page for more info on how this all works and how to add this to the original repository.
+
    
 
