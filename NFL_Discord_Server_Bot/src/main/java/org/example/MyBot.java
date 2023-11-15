@@ -44,7 +44,7 @@ public class MyBot extends ListenerAdapter //Simplifies the creation of event li
 
         }
         if (event.getMessage().getContentRaw().equalsIgnoreCase("!NFLDB help")) {
-            String filePath = "/Users/arafat/IdeaProjects/project-04-nfldiscordbot/NFL_Discord_Server_Bot/src/main/java/org/example/help.txt";
+            String filePath = "NFL_Discord_Server_Bot/src/main/java/org/example/help.txt";
 
             try {
                 // Create a FileReader to read the file
