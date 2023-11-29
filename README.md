@@ -10,7 +10,7 @@ These instructions are for Discord admin users.
 3. On the webpage that opens, choose the server where you want to add the bot from the dropdown menu.
 4. Click "Continue," and the bot will be added to your server.
 
-## How to Run the Bot (Will Be Updated Later to Include an Executable)
+## How to Run Locally
 1. Download this repository to your local machine.
 2. Using an IDE (preferably IntelliJ), open the project and navigate to the **MyBot.java** file. You can find it here: **NFL_Discord_Server_Bot/src/main/java/org/example/MyBot.java**
 3. Run the file until the console output stops.
