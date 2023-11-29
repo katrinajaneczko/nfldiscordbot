@@ -27,6 +27,12 @@ These instructions are for Discord admin users.
    * The workflow runs each time there is a push to the `main` branch.
    * If there is a green icon as opposed to red, then it's deploying correctly.
 4. See the Wiki page for more info on how this all works and how to add this to the original repository.
+   * To add/change repository secrets in the original repo, you'd go to `Settings > Secrets` and `variables > Actions` and hit the `New repository secret button`. The following 4 secrets are necessary for CI/CD: 
+      * AWS_ACCESS_KEY_ID
+      * AWS_SECRET_ACCESS_KEY
+      * AWS_ACCOUNT_ID
+      * BOT_TOKEN
+    * The BOT_TOKEN you should already have, and you can copy/paste it here. But the AWS account info will need to be obtained from an active account. 
 
    
 
