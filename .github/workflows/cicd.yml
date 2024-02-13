@@ -41,5 +41,6 @@ jobs:
           docker push ${{ secrets.AWS_ACCOUNT_NUMBER }}.dkr.ecr.us-east-1.amazonaws.com/nfl-discord-bot:latest
         working-directory: NFL_Discord_Server_Bot  # Specifies the working directory
 
-      - name: Trigger Amazon ECS service update
-        run: aws ecs update-service --cluster discord-bot --service test-nfl-discord-bot --force-new-deployment > /dev/null 2>&1
+    # Block this from running for now because I'm getting chrged $40/month if it runs lol
+     # - name: Trigger Amazon ECS service update
+     #   run: aws ecs update-service --cluster discord-bot --service test-nfl-discord-bot --force-new-deployment > /dev/null 2>&1
